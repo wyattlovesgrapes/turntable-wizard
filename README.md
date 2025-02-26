@@ -1,3 +1,3 @@
 # turntable-wizard
 
-load a glb into the page and render a turntable animation as a gif.
+load a glb and quickly render a turntable animation as a gif.
