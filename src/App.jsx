@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import './app.css'
+import './App.css'
 import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import GIF from 'gif.js'
