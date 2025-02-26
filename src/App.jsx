@@ -165,17 +165,25 @@ function App() {
     <div id="root">
       <div className="navBar">
         <span>turntable-wizard</span>
-        <span>Version: 0.0.1</span>
+        <span className='version'>
+          Version: 0.0.2
+          <img src="/mage-32.png" className="icon16" alt="Turntable Wizard" />
+        </span>
       </div>
       <div className="canvas-container">
         <canvas ref={canvasRef} style={{ width: '600px', height: '400px' }} />
-        {!file && <div className="placeholder-text">Load Model Here</div>}
+        {!file && (
+          <div className="placeholder-text version">
+            <img src="/mage-96.png" className="icon64" alt="Turntable Wizard" />
+            <span>Load Model Here</span>
+          </div>
+        )}
       </div>
       <div className="controls">
         <div className="controls-row">
           <input type="file" accept=".glb,.obj" onChange={handleFileUpload} />
           <label className="inputField">
-            Intensity:
+            <span>Intensity:</span>
             <input
               id="intensity"
               type="number"
@@ -184,7 +192,7 @@ function App() {
             />
           </label>
           <label className="inputField">
-            BG Color:
+            <span>BG Color:</span>
             <input
               id="bgColor"
               type="color"
@@ -195,7 +203,7 @@ function App() {
         </div>
         <div className="controls-row">
           <label className="inputField">
-            Cam Y:
+            <span>Cam Y:</span>
             <input
               id="camY"
               type="number"
@@ -205,7 +213,7 @@ function App() {
             />
           </label>
           <label className="inputField">
-            Cam Z:
+            <span>Cam Z:</span>
             <input
               id="camZ"
               type="number"
@@ -215,7 +223,7 @@ function App() {
             />
           </label>
           <label className="inputField">
-            FOV:
+            <span>FOV:</span>
             <input
               id="fov"
               type="number"
