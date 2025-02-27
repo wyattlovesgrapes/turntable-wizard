@@ -89,7 +89,7 @@ function App() {
             width: 540,
             height: 360,
             delay: 16,
-            workerScript: '/node_modules/gif.js/dist/gif.worker.js',
+            workerScript: '/gif.worker.js',
           })
         
           // loop through the captured images and add each one to the GIF
